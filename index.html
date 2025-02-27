@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="top">
+        <header>
+            <div class="container">
+                <div class="logo">Srijon</div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#about">Home</a></li>
+                        <li><a href="#experience">About</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#blogs">Project</a></li>
+                        <li><a href="#projects">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hello, <br>
+                    This is <span class="highlight">Srijon</span>, I'm a <br>
+                    Professional <span class="highlight">Software Developer</span>.
+                </h1>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fas fa-code"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <div class="buttons">
+                    <a href="#" class="btn contact">Contact Me <i class="fas fa-user"></i></a>
+                    <a href="#" class="btn resume">Get Resume <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+
+            <div class="code-box">
+                <pre>
+<code>
+const coder = {
+    name: 'Srijon',
+    skills: ['React', 'NextJS', 'Redux', 'Express', 
+             'NestJS', 'MySQL', 'MongoDB', 'Docker', 'AWS'],
+    hardWorker: true,
+    quickLearner: true,
+    problemSolver: true,
+    hireable: function() {
+        return (
+            this.hardWorker &&
+            this.problemSolver &&
+            this.skills.length >= 5
+        );
+    }
+};
+</code>
+                </pre>
+            </div>
+            
+        </section>
+
+        <!-- Add the animated background here -->
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <h2 class="about-title">-- About Me-</h2>
+<section class="about" >
+    <div class="left-about">
+        <img src="/images/srijon_image-modified-removebg-preview.png" alt="">
+    </div>
+    <div class="right-about">
+       <h3>let's me introduce myself</h3>
+       <p>Lorem ipsum dolor sit amet.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore sequi, molestias eos a molestiae.</p>
+    </div>
+</section>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
