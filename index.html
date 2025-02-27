@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Header</title>
     <link rel="stylesheet" href="/css/style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -29,7 +29,7 @@
             </div>
         </header>
         <section class="hero">
-            <div class="hero-text">
+            <div class="hero-text wow animate__fadeInLeftBig animate__animated "  >
                 <h1>Hello, <br>
                     This is <span class="highlight">Srijon</span>, I'm a <br>
                     Professional <span class="highlight">Software Developer</span>.
@@ -45,11 +45,11 @@
 
                 <div class="buttons">
                     <a href="#" class="btn contact">Contact Me <i class="fas fa-user"></i></a>
-                    <a href="#" class="btn resume">Get Resume <i class="fas fa-download"></i></a>
+                    <a href="/images/srijon_resume (3).pdf" class="btn resume">Get Resume <i class="fas fa-download"></i></a>
                 </div>
             </div>
 
-            <div class="code-box">
+            <div class="code-box wow  animate__fadeInRightBig animate__animated ">
                 <pre>
 <code>
 const coder = {
@@ -219,17 +219,17 @@ const coder = {
       <!-- Project 1 -->
       <div class="project-card">
         <div class="project-image">
-          <img src="project1.jpg" alt="Project 1" />
+          <img src="/images/My Music Player .png" alt="Project 1" />
         </div>
         <div class="project-details">
-          <h3 class="project-title">E-Commerce Website</h3>
+          <h3 class="project-title">Full-Stack Music Player</h3>
           <p class="project-description">
             A fully functional e-commerce website with user authentication, product search, and payment integration.
           </p>
           <div class="project-technologies">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
           </div>
           <a href="#" class="project-link">View Project</a>
         </div>
@@ -238,12 +238,31 @@ const coder = {
       <!-- Project 2 -->
       <div class="project-card">
         <div class="project-image">
-          <img src="/images/srijon_image-modified-removebg-preview.png" alt="Project 2" />
+          <img src="/images/Chat Bot.png" alt="Project 2" />
         </div>
         <div class="project-details">
-          <h3 class="project-title">Portfolio Website</h3>
+          <h3 class="project-title">Chat Bot</h3>
           <p class="project-description">
             A personal portfolio website showcasing skills, projects, and contact information.
+          </p>
+          <div class="project-technologies">
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Express JS</span>
+          </div>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+  
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/Currency Converter.png" alt="Project 3" />
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">Currency Converter</h3>
+          <p class="project-description">
+            A task management application with features like task creation, deadlines, and progress tracking.
           </p>
           <div class="project-technologies">
             <span>HTML</span>
@@ -253,46 +272,8 @@ const coder = {
           <a href="#" class="project-link">View Project</a>
         </div>
       </div>
-  
-      <!-- Project 3 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="project3.jpg" alt="Project 3" />
-        </div>
-        <div class="project-details">
-          <h3 class="project-title">Task Management App</h3>
-          <p class="project-description">
-            A task management application with features like task creation, deadlines, and progress tracking.
-          </p>
-          <div class="project-technologies">
-            <span>Vue.js</span>
-            <span>Firebase</span>
-            <span>Tailwind CSS</span>
-          </div>
-          <a href="#" class="project-link">View Project</a>
-        </div>
-      </div>
     </div>
   </section>
-  <div class="contact-section">
-    <h2>Contact Us</h2>
-    <p>We'd love to hear from you! Please fill out the form below.</p>
-    <form class="contact-form">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-    </form>
-</div>
 
     <script src="/js/script.js"></script>
 </body>
