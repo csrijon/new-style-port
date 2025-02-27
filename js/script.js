@@ -4,6 +4,5 @@ menuicon.addEventListener("click",() => {
   let navmenu = document.querySelector(".nav-menu");
   navmenu.classList.toggle('active');
 })
-}
-)
+})
 
