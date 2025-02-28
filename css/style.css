@@ -23,7 +23,7 @@ header {
     display: flex;
     align-items: center;
     height: 60px; /* Adjust height as needed */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 .logo img {
     width: 120px;  
@@ -146,7 +146,7 @@ h1 {
 }
 
 .social-icons a:hover {
-    color: #00ff9f;
+    color: cyan;
 }
 
 /* Buttons */
@@ -219,11 +219,11 @@ h1 {
         max-width: 90%;
     }
     .code-box {
-        /* padding-top: 30px; */
+        padding-top: 30px;
     }
     .hero-text{
         max-width: 90%;
-        padding-top: 30px;
+        padding-top: 20px;
     }
 }
 .top {
@@ -370,18 +370,21 @@ h1 {
   }
   
   .skill-card {
-    background: #333333;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent dark background */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
     padding: 20px;
     width: 200px;
     text-align: center;
-    transition: transform 0.3s ease;
-  }
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Subtle border */
+}
   
-  .skill-card:hover {
-    transform: translateY(-10px);
-  }
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhances depth on hover */
+}
   
   .skill-icon {
     font-size: 3rem;
@@ -391,7 +394,7 @@ h1 {
   
   .skill-name {
     font-size: 1.2rem;
-    color:black;
+    color:white;
     margin-bottom: 10px;
   }
   
@@ -446,19 +449,24 @@ h1 {
   
   .timeline-content {
     padding: 20px;
-    background: #1f1f1f;
-    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-    border-radius: 5px;
+
+    border-radius: 6px;
     color: white;
     padding: 1.75rem;
+    background: rgba(255, 255, 255, 0.1);
     transition: 0.4s ease;
     overflow-wrap: break-word !important;
     margin: 1rem;
     margin-bottom: 20px;
-    border-radius: 6px;
-  }
-  
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 20px rgba(26, 26, 26, 0.5), 
+                -10px -10px 20px rgba(36, 36, 36, 0.5);
+}
   .timeline-component {
     margin: 0px 20px 20px 20px;
   }
@@ -501,6 +509,7 @@ h1 {
 /* Projects Container */
 .projects-section{
     padding: 50px 20px;
+    background: linear-gradient(135deg, rgba(6, 6, 6, 0.9), rgba(79, 84, 200, 0.7));
 }
 .projects-container {
     display: flex;
@@ -624,6 +633,7 @@ h1 {
 /* Social Media Icons */
 .social-icons {
     display: flex;
+    align-items: center;
     gap: 15px;
     margin-bottom: 10px;
 }
@@ -635,7 +645,7 @@ h1 {
 }
 
 .icon:hover {
-    color: #ff5722;
+    color:cyan;
     transform: scale(1.2);
 }
 
