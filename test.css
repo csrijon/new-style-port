@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    gap: 30px;
+}
+
+/* Profile Image */
+.about-img img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+/* About Information */
+.about-info {
+    flex: 1;
+}
+
+/* Title */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Subtitle */
+.subtitle {
+    font-style: italic;
+    color: #aaa;
+}
+
+/* Details Grid */
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.column p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Description */
+.description {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 80%;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin-bottom: 10px;
+    }
+}

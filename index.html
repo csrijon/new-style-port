@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Header</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/test.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -90,17 +91,44 @@ const coder = {
         </div>
     </section>
 
-    <h2 class="about-title">About Me</h2>
-<section class="about" >
-    <div class="left-about wow animate__fadeInLeftBig animate__animated ">
-        <img src="/images/srijon_image-modified-removebg-preview.png" alt="">
-    </div>
-    <div class="right-about wow animate__fadeInRightBig animate__animated ">
-       <h3>let's me introduce myself</h3>
-       <p>I am Srijon. I am a software developer and I am a Full Stack web developer.I am passionate about coding.</p>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad inventore sequi, molestias eos a molestiae.</p>
-    </div>
-</section>
+    <section class="about">
+        <div class="about-container">
+            <!-- About Heading -->
+    
+            <!-- Profile Image -->
+            <div class="about-img">
+                <img src="/images/srijon_image-modified-removebg-preview.png" alt="Profile Image">
+            </div>
+    
+            <!-- Profile Details -->
+            <div class="about-info">
+                <h2 class="title">UI/UX Designer & Web Developer.</h2>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    
+                <div class="details">
+                    <div class="column">
+                        <p>➤ <strong>Birthday:</strong> 1 May 1995</p>
+                        <p>➤ <strong>Website:</strong> www.example.com</p>
+                        <p>➤ <strong>Phone:</strong> +123 456 7890</p>
+                        <p>➤ <strong>City:</strong> New York, USA</p>
+                    </div>
+                    <div class="column">
+                        <p>➤ <strong>Age:</strong> 30</p>
+                        <p>➤ <strong>Degree:</strong> Master</p>
+                        <p>➤ <strong>Email:</strong> email@example.com</p>
+                        <p>➤ <strong>Freelance:</strong> Available</p>
+                    </div>
+                </div>
+    
+                <p class="description">
+                    Officiis eligendi itaque labore et dolorem mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. 
+                    Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. 
+                    Sed et consectetur qui quia repellendus itaque neque.
+                </p>
+            </div>
+        </div>
+    </section>
+    
 
 <section id="skills" class="skills-section" >
     <h2 class="section-title">My Skills</h2>
@@ -172,46 +200,48 @@ const coder = {
       </div>
     </div>
   </section>
-  <section id="education" class="education-section">
-    <h2 class="section-title">Education</h2>
-    <div class="education-container">
-      <!-- Education Item 1 -->
-      <div class="education-item">
-        <div class="education-icon">
-          <i class="fas fa-graduation-cap"></i>
+ 
+<style>@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');</style>
+<!--This is the main container that contains the whole timeline.-->
+<section class="design-section">
+    <h2 class="timeline-heading">Education</h2>
+    <div class="timeline">
+
+        <div class="timeline-empty"></div>
+
+        <div class="timeline-middle">
+            <div class="timeline-circle"></div>
         </div>
-        <div class="education-details">
-          <h3 class="degree">Bachelor of Computer Application</h3>
-          <p class="institution">Maulana Abul Kalam Azad University Of Technology</p>
-          <p class="year">2022 - Present</p>
+        <div class="timeline-component timeline-content">
+            <h3>Bachelor of Computer Applications</h3>
+            <p>Maulana Abul Kalam Azad University of Technology</p>
+            <p>2021 - 2024</p>
         </div>
-      </div>
-  
-      <!-- Education Item 2 -->
-      <div class="education-item">
-        <div class="education-icon">
-          <i class="fas fa-graduation-cap"></i>
+
+        <div class="timeline-component timeline-content">
+            <h3>Higher Secondary Education</h3>
+            <p>[Your School Name]</p>
+            <p>2019 - 2021</p>
         </div>
-        <div class="education-details">
-          <h3 class="degree">High School Education </h3>
-          <p class="institution">Mansuka L.N High School</p>
-          <p class="year">2021 - 2022</p>
+        <div class="timeline-middle">
+            <div class="timeline-circle"></div>
         </div>
-      </div>
-  
-      <!-- Education Item 3 -->
-      <div class="education-item">
-        <div class="education-icon">
-          <i class="fas fa-graduation-cap"></i>
+        <div class="timeline-empty"></div>
+
+        <div class="timeline-empty"></div>
+
+        <div class="timeline-middle">
+            <div class="timeline-circle"></div>
         </div>
-        <div class="education-details">
-          <h3 class="degree">Certification in Web Development</h3>
-          <p class="institution">Online Learning Platform</p>
-          <p class="year">2021 - 2022</p>
+        <div class="timeline-component timeline-content">
+            <h3>Software Development Internship</h3>
+            <p>[Company Name]</p>
+            <p>2023 - 2024</p>
         </div>
-      </div>
+
     </div>
-  </section>
+</section>
+
 
   <section id="projects" class="projects-section">
     <h2 class="section-title">Projects</h2>
@@ -235,7 +265,7 @@ const coder = {
         </div>
       </div>
   
-      <!-- Project 2 -->
+
       <div class="project-card">
         <div class="project-image">
           <img src="/images/Chat Bot.png" alt="Project 2" />
@@ -274,6 +304,17 @@ const coder = {
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="social-icons">
+        <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="icon"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="footer-text">Designed by Srijon Chowdhury</p>
+</footer>
 
     <script src="/js/script.js"></script>
 </body>
