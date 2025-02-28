@@ -12,10 +12,23 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it's above other content */
     color: #fff;
-    padding: 10px 0;
     backdrop-filter: blur(10px);
     background: linear-gradient(135deg, rgba(6, 6, 6, 0.9), rgba(79, 84, 200, 0.7));
+    display: flex;
+    align-items: center;
+    height: 60px; /* Adjust height as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+.logo img {
+    width: 120px;  
+    height: auto;  
+    display: block; 
 }
 
 .container {
@@ -75,10 +88,9 @@ header {
         backdrop-filter: blur(10px);
         color: black;
         position: absolute;
-        top: 48px;
+        top: 70px;
         left: 0;
     }
-
     .nav-menu.active {
         display: flex;
     }
@@ -99,11 +111,10 @@ header {
 .hero {
     display: flex;
     justify-content: space-evenly;
-    /* background: linear-gradient(135deg, rgba(6, 6, 6, 0.9), rgba(79, 84, 200, 0.7)), url('your-background-image.jpg'); */
     align-items: center;
-    padding: 50px;
+    padding: 60px;
     max-width: 100%;
-    height: 80vh;
+    height: 90vh;
     margin: auto;
 }
 
@@ -204,11 +215,14 @@ h1 {
     .social-icons{
         justify-content: center;
     }
-    .hero-text, .code-box {
+    .code-box {
         max-width: 90%;
     }
-
     .code-box {
+        /* padding-top: 30px; */
+    }
+    .hero-text{
+        max-width: 90%;
         padding-top: 30px;
     }
 }
