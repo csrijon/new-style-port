@@ -7,9 +7,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #282c34;
+    background: rgba(40, 44, 52, 0.9);
 }
-
 header {
     position: fixed;
     top: 0;
@@ -91,22 +90,23 @@ header {
         backdrop-filter: blur(50px);
         color: black;
         position: absolute;
-        background-color:rgba(255, 255, 255, 0.1);
+        background-color:rgba(7, 7, 7, 0.1);
         top: 50px;
         left: 0;
         z-index: 9999;
     }
     .nav-menu.active {
         display: flex;
-
     }
 
     .nav-menu ul {
         flex-direction: column;
-        background-color: transparent;
-        backdrop-filter: blur(50px);
+        background-color: rgba(255, 255, 255, 0.2); /* Make it semi-transparent */
+        backdrop-filter: blur(20px); /* Apply blur */
+        border-radius: 10px; /* Optional */
+        padding: 10px; /* Optional */
     }
-
+    
     .nav-menu ul li {
         margin: 10px 0;
         text-align: center;
