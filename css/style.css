@@ -88,13 +88,14 @@ header {
         display: none;
         flex-direction: column;
         width: 100%;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(50px);
         color: black;
         position: absolute;
-        top: 70px;
+        background-color:rgba(255, 255, 255, 0.1);
+        top: 50px;
         left: 0;
+        z-index: 9999;
     }
-
     .nav-menu.active {
         display: flex;
 
@@ -102,6 +103,8 @@ header {
 
     .nav-menu ul {
         flex-direction: column;
+        background-color: transparent;
+        backdrop-filter: blur(50px);
     }
 
     .nav-menu ul li {
